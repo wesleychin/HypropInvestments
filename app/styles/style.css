@@ -115,7 +115,9 @@ a, button, :focus, a:focus, button:focus, a:active, a:hover {
 	text-align:center;
 	height:auto;
 	overflow: hidden;
-	height:500px;
+	height:700px;
+	background-image:url(../images/hyprop.png);
+	background-position:bottom;
 	}
 	
 .home-logo {
