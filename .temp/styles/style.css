@@ -118,5 +118,13 @@ a, button, :focus, a:focus, button:focus, a:active, a:hover {
 .home-logo {
 	border:2px solid #fff;
 	margin-bottom:20px;
-	margin-top:70px;
+	margin-top:20px;
 	}
+	
+.homeoverlay {background: rgba(0, 0, 0, 0.4);
+padding:12px;
+display: inline-block;
+width:100%;
+font-size:16px;
+border:0px solid #15488f;
+}
