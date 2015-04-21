@@ -30,6 +30,16 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     controller: 'AppCtrl'
   })
 
+  .state('app.feed', {
+    url: "/feed",
+    views: {
+        'menuContent': {
+          templateUrl: "templates/feed.html",
+          controller: 'FeedCtrl'
+        }
+      }
+  })
+
   .state('app.search', {
     url: "/search",
     views: {
