@@ -4,5 +4,8 @@
     <div ng-repeat="feed in feed.data.record.field">
     <span>{{feed.data.record.field | json}}</span>
     </div>
+    <div>
+    <highchart id="chart1" config="highchartsNG"></highchart>
+    </div>
   </ion-content>
 </ion-view>
