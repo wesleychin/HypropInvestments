@@ -45,10 +45,40 @@ angular.module('starter.controllers', [])
 })
 
 .controller('FeedCtrl', function($scope, $http) {
-  var url = "http://feeds1.mcgbfa.com/engine.asmx/getPriceData?SubFeed=0&newfeed=true&CompanyKey=Hyprop%20Investments%20Ltd";
+  //var url = "http://feeds1.mcgbfa.com/engine.asmx/getPriceData?SubFeed=0&newfeed=true&CompanyKey=Hyprop%20Investments%20Ltd";
+  //var feed = $http.get(url);
+  //console.log(JSON.stringify(feed));
 
-  var feed = $http.get(url);
-  console.log(JSON.stringify(feed));
+  $scope.feed = {
+    "data": {
+      "record": {
+        "field": [
+        { "-name": "Date" },
+        {
+          "-name": "Name",
+          "-value": "Hyprop Inv Ltd"
+        },
+        {
+          "-name": "Ticker",
+          "-value": "HYP"
+        },
+        {
+          "-name": "Price",
+          "-value": "121.8700"
+        },
+        {
+          "-name": "Percentage",
+          "-value": "0.00"
+        },
+        {
+          "-name": "Movement",
+          "-value": "0"
+        },
+        { "-name": "Time" }
+        ]
+      }
+    }
+  };
 })
 
 .controller('PlaylistCtrl', function($scope, $stateParams) {

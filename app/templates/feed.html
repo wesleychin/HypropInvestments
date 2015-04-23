@@ -1,5 +1,8 @@
 <ion-view view-title="Feed">
   <ion-content>
     <h1>Feed</h1>
+    <div ng-repeat="feed in feed.data.record.field">
+    <span>{{feed.data.record.field | json}}</span>
+    </div>
   </ion-content>
 </ion-view>
