@@ -44,6 +44,10 @@ angular.module('starter.controllers', [])
   ];
 })
 
+
+.controller('TestCtrl', function($scope) {
+})
+
 .controller('FeedCtrl', function($scope, $http) {
   //var url = "http://feeds1.mcgbfa.com/engine.asmx/getPriceData?SubFeed=0&newfeed=true&CompanyKey=Hyprop%20Investments%20Ltd";
   //var feed = $http.get(url);
