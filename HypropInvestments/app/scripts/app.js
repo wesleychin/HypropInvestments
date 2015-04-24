@@ -66,6 +66,105 @@ angular.module('starter', ['ionic', 'starter.controllers', 'highcharts-ng'])
     }
   })
 
+  .state('app.FinancialResults', {
+    url: "/shareinformation",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/shareinformation.html"
+      }
+    }
+  })
+
+  .state('app.announcements', {
+    url: "/announcements",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/announcements.html"
+      }
+    }
+  })
+
+  .state('app.financialcalendar', {
+    url: "/financialcalendar",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/financialcalendar.html"
+      }
+    }
+  })
+
+  .state('app.annualreports', {
+    url: "/annualreports",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/annualreports.html"
+      }
+    }
+  })
+
+  .state('app.presentations', {
+    url: "/presentations",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/presentations.html"
+      }
+    }
+  })
+
+  .state('app.pressreleases', {
+    url: "/pressreleases",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/pressreleases.html"
+      }
+    }
+  })
+
+  .state('app.webcasts', {
+    url: "/webcasts",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/webcasts.html"
+      }
+    }
+  })
+
+  .state('app.operationaldata', {
+    url: "/operationaldata",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/operationaldata.html"
+      }
+    }
+  })
+
+  .state('app.corporategovernance', {
+    url: "/corporategovernance",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/corporategovernance.html"
+      }
+    }
+  })
+
+  .state('app.shareholderstructure', {
+    url: "/shareholderstructure",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/shareholderstructure.html"
+      }
+    }
+  })
+
+  .state('app.investorcontacts', {
+    url: "/investorcontacts",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/investorcontacts.html"
+      }
+    }
+  })
+
   .state('app.playlists', {
     url: "/playlists",
     views: {
