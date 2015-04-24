@@ -61,7 +61,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'highcharts-ng'])
     url: "/shareinformation",
     views: {
       'menuContent': {
-        templateUrl: "templates/shareinformation.html"
+        templateUrl: "templates/shareinformation.html",
+        controller: 'ShareInformationCtrl'
       }
     }
   })
