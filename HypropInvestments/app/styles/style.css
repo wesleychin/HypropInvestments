@@ -139,5 +139,5 @@ border:0px solid #15488f;
 
 a, button, :focus, a:focus, button:focus, a:active, a:hover {
   outline: 0;
-  background-color: #000;
+  background-color: #000 !important;
 }
