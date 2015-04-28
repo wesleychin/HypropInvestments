@@ -141,3 +141,11 @@ a, button, :focus, a:focus, button:focus, a:active, a:hover {
   outline: 0;
   background-color: #000 !important;
 }
+
+.card .item {
+  border-left: 0;
+  border-right: 0;
+  background-color: #FFF;
+  color: #999;
+  font-size: 14px;
+}
