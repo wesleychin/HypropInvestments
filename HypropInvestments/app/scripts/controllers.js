@@ -44,7 +44,31 @@ angular.module('starter.controllers', [])
   ];
 })
 
-.controller('ShareInformationCtrl', function($scope) {
+.controller('ShareInformationCtrl', function($scope, uiGmapIsReady, $timeout) {
+  $scope.markers = [];
+  $scope.map = {
+    center: { latitude: -26.145311, longitude: 28.042061 },
+    zoom: 20
+  };
+
+  $scope.control = {};
+
+  $scope.$watch($scope.active, function() {
+    $timeout(function() {
+      uiGmapIsReady.promise().then(function () {
+        $scope.markers.push({
+          idKey: 1,
+          coords: {
+            latitude: -26.145311,
+            longitude: 28.042061
+          },
+
+        });
+      });
+    }, 0);
+  });
+
+
   $scope.config = {
 
     chart: {
