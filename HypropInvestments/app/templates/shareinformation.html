@@ -1,5 +1,10 @@
 <ion-view view-title="Share Information">
   <ion-content>
     <highchart id="chart1" config="config"></highchart>
+    <br/>
+    <ui-gmap-google-map draggable="true" center='map.center' zoom='map.zoom' control="control">
+    	<ui-gmap-markers models="markers" coords="'coords'" idKey="'idKey'">
+		</ui-gmap-markers>
+	</ui-gmap-google-map>
   </ion-content>
 </ion-view>
