@@ -80,8 +80,8 @@ a.item {
 }
 
 .bar.bar-stable {
-  border-color: #2c77a4;
-  background-color: #2c77a4;
+  border-color: #0c79a6;
+  background-color: #0c79a6;
   color: #fff;
 }
 
@@ -197,6 +197,29 @@ a, button, :focus, a:focus, button:focus, a:active, a:hover {
   padding-top: 0;
   background-position: bottom;
   border-top-width: 0;
-  background-color:#1372BC;
+  background-color:#3a3a3a;
   /* border-bottom-width: 1px; */
+}
+
+.tabs-striped.tabs-background-positive .tabs {
+  background-color: #3a3a3a;
+  background-image: none;
+  border-bottom:0;
+}
+
+.item h2 {
+  margin: 0 0 2px 0;
+  font-size: 16px;
+  font-weight: normal;
+  color: #2f7bc5;
+}
+
+.item-avatar > img:first-child, .item-avatar .item-image, .item-avatar .item-content > img:first-child, .item-avatar .item-content .item-image, .item-avatar-left > img:first-child, .item-avatar-left .item-image, .item-avatar-left .item-content > img:first-child, .item-avatar-left .item-content .item-image {
+  top: 0;
+  position:relative;
+  left: 0;
+  max-width: 25px;
+  max-height: 21px;
+  width: 100%;
+  border-radius: 10%;
 }
