@@ -67,11 +67,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'highcharts-ng', 'uiG
     }
   })
 
-  .state('app.FinancialResults', {
-    url: "/shareinformation",
+  .state('app.financialresults', {
+    url: "/financialresults",
     views: {
       'menuContent': {
-        templateUrl: "templates/shareinformation.html"
+        templateUrl: "templates/financialresults.html"
       }
     }
   })
