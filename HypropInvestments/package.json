@@ -2,7 +2,9 @@
   "name": "HypropInvestments",
   "version": "0.0.0",
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "firebase": "~2.2.4"
+  },
   "devDependencies": {
     "grunt": "~0.4.5",
     "glob": "~4.3.5",
@@ -50,8 +52,8 @@
     "test": "grunt test"
   },
   "cordovaPlugins": [
-		"org.apache.cordova.device",
-		"org.apache.cordova.console",
-		"com.ionic.keyboard"
+    "org.apache.cordova.device",
+    "org.apache.cordova.console",
+    "com.ionic.keyboard"
   ]
 }
