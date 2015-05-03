@@ -81,7 +81,7 @@ a.item {
 
 .bar.bar-stable {
   border-color: #212121;
-  background-color: #212121;
+  background-color: #000;
   color: #fff; }
 
 .bar-stable .button.button-clear {
@@ -154,10 +154,11 @@ a, button, :focus, a:focus, button:focus, a:active, a:hover {
   padding-top: 1px;
   padding-bottom: 1px;
   border: 1px solid #F4EEEE;
-  /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); */ }
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3);
+}
 
 .item p {
-  color: #D5D4D4;
+  color: #999;
   font-size: 12px;
   margin-bottom: 2px;
 }
@@ -228,3 +229,11 @@ a, button, :focus, a:focus, button:focus, a:active, a:hover {
 }
 
 .trselected {padding-bottom:15px !important; border-bottom:1px solid #E4E4E4; height:auto;}
+.content {
+  padding: 20px;
+}
+
+.sharepricefeed {  color: green;
+  font-size: 25px;
+  font-weight:900;
+}
