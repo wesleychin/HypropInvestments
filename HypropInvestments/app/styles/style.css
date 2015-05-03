@@ -80,10 +80,9 @@ a.item {
 }
 
 .bar.bar-stable {
-  border-color: #0c79a6;
-  background-color: #0c79a6;
-  color: #fff;
-}
+  border-color: #212121;
+  background-color: #212121;
+  color: #fff; }
 
 .bar-stable .button.button-clear {
   border-color: transparent;
@@ -215,7 +214,13 @@ a, button, :focus, a:focus, button:focus, a:active, a:hover {
 
 .item h2 {
   margin: 0 0 2px 0;
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f7bc5;
+}
+
+.strongh2 {
+  font-size: 18px;
   font-weight: normal;
   color: #2f7bc5;
 }
@@ -229,3 +234,5 @@ a, button, :focus, a:focus, button:focus, a:active, a:hover {
   width: 100%;
   border-radius: 10%;
 }
+
+.trselected {padding-bottom:15px !important; border-bottom:1px solid #E4E4E4; height:auto;}
