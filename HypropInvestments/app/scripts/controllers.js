@@ -44,6 +44,12 @@ angular.module('starter.controllers', [])
   ];
 })
 
+.controller('PressReleasesCtrl', function($scope, $http) {
+  $http.get('/api/pressreleases.json').success(function(response) {
+    $scope.pressreleases = response;
+  });
+})
+
 .controller('ShareInformationCtrl', function($scope, uiGmapIsReady, $timeout, $firebaseArray, $firebaseObject) {
   var firebaseRootRef = new Firebase('https://boiling-heat-2151.firebaseio.com/');
   var firebaseChildRef = firebaseRootRef.child("shareinformation/datafeed");
