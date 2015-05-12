@@ -89,48 +89,48 @@ a.item {
   background-color: #000;
   color: #fff; }
 
-.bar-stable .button.button-clear {
-  border-color: transparent;
-  background: none;
-  box-shadow: none;
-  color: #FFF;
-  font-size: 17px;
-}
+  .bar-stable .button.button-clear {
+    border-color: transparent;
+    background: none;
+    box-shadow: none;
+    color: #FFF;
+    font-size: 17px;
+  }
 
-.bar.bar-stable .title {
-  color: #FFF;
-}
+  .bar.bar-stable .title {
+    color: #FFF;
+  }
 
 
-a, button, :focus, a:focus, button:focus, a:active, a:hover {
-  outline: 0;
-  background-color:#999;
-}
+  a, button, :focus, a:focus, button:focus, a:active, a:hover {
+    outline: 0;
+    background-color:#999;
+  }
 
-.home {
-	background-color:#000;
-	padding:20px;
-	color:#FFF;
-	text-align:center;
-	height:auto;
-	overflow: hidden;
-	height:700px;
-	background-image:url(../images/hyprop.png);
-	background-position:bottom;
-	}
-	
-.home-logo {
-	border:2px solid #fff;
-	margin-bottom:20px;
-	margin-top:20px;
-	}
-	
-.homeoverlay {background: rgba(0, 0, 0, 0.4);
-padding:12px;
-display: inline-block;
-width:100%;
-font-size:16px;
-border:0px solid #15488f;
+  .home {
+   background-color:#000;
+   padding:20px;
+   color:#FFF;
+   text-align:center;
+   height:auto;
+   overflow: hidden;
+   height:700px;
+   background-image:url(../images/hyprop.png);
+   background-position:bottom;
+ }
+ 
+ .home-logo {
+   border:2px solid #fff;
+   margin-bottom:20px;
+   margin-top:20px;
+ }
+ 
+ .homeoverlay {background: rgba(0, 0, 0, 0.4);
+  padding:12px;
+  display: inline-block;
+  width:100%;
+  font-size:16px;
+  border:0px solid #15488f;
 }
 
 .item-complex .item-content, .item-radio .item-content {
@@ -159,7 +159,7 @@ a, button, :focus, a:focus, button:focus, a:active, a:hover {
   padding-top: 1px;
   padding-bottom: 1px;
   border: 1px solid #F4EEEE;
-  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3);
+  /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); */ 
 }
 
 .item p {
