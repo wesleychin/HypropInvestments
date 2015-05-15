@@ -252,16 +252,33 @@ a, button, :focus, a:focus, button:focus, a:active, a:hover {
 }
 
 .content {padding:20px;}
+
 .date {
-  border: 1px solid rgb(229, 241, 251);
-  padding: 6px;
-  float: left;
-  text-align: center;
+  padding-right: 14px;
+  border-right: 2px solid #246fdf;
   margin-right: 10px;
-  background-color: aliceblue;}
+}
+
+.itemcard {
+  color: #FFF;
+  background-color:#FFF !important; 
+  border-bottom:1px solid #f8f8f8 !important;
+  position: relative;
+  z-index: 2;
+  display: block;
+  padding: 16px;
+  border-width:1px;
+  font-size: 16px;
+}
+}
   
 .seperator {
   border-bottom: 1px solid #EBEBEB;
   margin-bottom: 10px;
   margin-top: 20px;
 }
+
+.item-content.activated {
+	background-color:#000 !important; color:#FFF;}
+	
+.item-content.hover {background-color:red; color:#FFF;}
