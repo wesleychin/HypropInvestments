@@ -1,41 +1,40 @@
 <ion-view view-title="Press Releases">
 <ion-content>
-  <div class="tabs-striped tabs-top tabs-background-positive tabs-color-light">
-    <div class="tabs">
-      <a class="tab-item active" href="#">
-        <i class="icon ion-home"></i>
-        Test
-      </a>
-      <a class="tab-item" href="#">
-        <i class="icon ion-star"></i>
-        Favorites
-      </a>
-      <a class="tab-item" href="#">
-        <i class="icon ion-gear-a"></i>
-        Settings
-      </a>
-    </div>
-  </div>
+<ion-tabs>
+
+<ion-tab title="Home">
+<!-- Tab 1 content -->
+</ion-tab>
+
+<ion-tab title="About">
+<!-- Tab 2 content -->
+</ion-tab>
+
+<ion-tab title="Settings">
+<!-- Tab 3 content -->
+</ion-tab>
+
+</ion-tabs>
 
 
-  <div ng-repeat="pressrelease in pressreleases">
-    <span>{{pressrelease.title}}</span><br/>
-    <span>{{pressrelease.link}}</span><br/>
-    <span>{{pressrelease.pubDate}}</span><br/><br/>
+<div ng-repeat="pressrelease in pressreleases">
+  <span>{{pressrelease.title}}</span><br/>
+  <span>{{pressrelease.link}}</span><br/>
+  <span>{{pressrelease.pubDate}}</span><br/><br/>
+</div>
+<div class="tabs-striped tabs-top tabs-background-positive tabs-color-light">
+  <div class="tabs">
+    <a class="tab-item active" href="#">
+      2015
+    </a>
+    <a class="tab-item" href="#">
+      2014
+    </a>
+    <a class="tab-item" href="#">
+      2013
+    </a>
   </div>
-  <div class="tabs-striped tabs-top tabs-background-positive tabs-color-light">
-    <div class="tabs">
-      <a class="tab-item active" href="#">
-        2015
-      </a>
-      <a class="tab-item" href="#">
-        2014
-      </a>
-      <a class="tab-item" href="#">
-        2013
-      </a>
-    </div>
-  </div>
+</div>
 
   <!-- <div class="list card">
 
@@ -99,10 +98,10 @@
     </ion-content>
   </ion-view>
 
-   
+  
 
 
   
   
-  </ion-content>
+</ion-content>
 </ion-view>
