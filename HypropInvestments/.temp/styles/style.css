@@ -159,7 +159,7 @@ a, button, :focus, a:focus, button:focus, a:active, a:hover {
 .card {
   padding-top: 1px;
   padding-bottom: 1px;
-  border: 1px solid #F4EEEE;
+  border: 1px solid #bdbdbd;
   box-shadow: 0 0px 0px rgba(0, 0, 0, 0.3);
 }
 

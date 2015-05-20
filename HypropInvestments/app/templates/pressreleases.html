@@ -2,24 +2,35 @@
 <ion-content>
 <ion-tabs>
 
-<ion-tab title="Home">
+<ion-tab title="2015">
 <!-- Tab 1 content -->
 </ion-tab>
 
-<ion-tab title="About">
+<ion-tab title="2014">
 <!-- Tab 2 content -->
 </ion-tab>
 
-<ion-tab title="Settings">
+<ion-tab title="2013">
 <!-- Tab 3 content -->
 </ion-tab>
 
 </ion-tabs>
 
+<div class="list card">
 
-<div ng-repeat="pressrelease in pressreleases">
-  <span>{{pressrelease.title}}</span><br/>
-  <span>{{pressrelease.link}}</span><br/>
+    <div class="item item-avatar">
+    <p>23 FEB 2015</p>
+      Hyprop continues sustainable distribution growth
+      </div>
+      
+      <div class="item item-avatar">
+    <p>23 FEB 2015</p>
+      Hyprop continues sustainable distribution growth
+      </div>
+    </div>
+
+<div ng-repeat="pressrelease in pressreleases" style="background-color:#FFF; padding:10px;">
+  <span style="color:#0B7DDB; font-size:14px;">{{pressrelease.title}}</span><br/>
   <span>{{pressrelease.pubDate}}</span><br/><br/>
 </div>
 <div class="tabs-striped tabs-top tabs-background-positive tabs-color-light">
