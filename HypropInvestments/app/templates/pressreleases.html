@@ -1,7 +1,27 @@
 <ion-view view-title="Press Releases">
-  <ion-content>
-  <div>
-  {{pressreleases | json}}
+<ion-content>
+  <div class="tabs-striped tabs-top tabs-background-positive tabs-color-light">
+    <div class="tabs">
+      <a class="tab-item active" href="#">
+        <i class="icon ion-home"></i>
+        Test
+      </a>
+      <a class="tab-item" href="#">
+        <i class="icon ion-star"></i>
+        Favorites
+      </a>
+      <a class="tab-item" href="#">
+        <i class="icon ion-gear-a"></i>
+        Settings
+      </a>
+    </div>
+  </div>
+
+
+  <div ng-repeat="pressrelease in pressreleases">
+    <span>{{pressrelease.title}}</span><br/>
+    <span>{{pressrelease.link}}</span><br/>
+    <span>{{pressrelease.pubDate}}</span><br/><br/>
   </div>
   <div class="tabs-striped tabs-top tabs-background-positive tabs-color-light">
     <div class="tabs">
@@ -16,65 +36,65 @@
       </a>
     </div>
   </div>
-  
-  <div class="list card">
 
-  <div class="item item-avatar">
-    <h2>Hyprop continues sustainable distribution growth</h2>
-    <p>23 FEB 2015</p>
-  </div>
+  <!-- <div class="list card">
 
-  <div class="item item-body">
-    <p>
-      Reporting healthy growth in returns, Hyprop Investments Limited ("Hyprop") (JSE: HYP) today announced an interim dividend of 262.7 cents per share for the six months to December 2014, up 13.7% on December 2013. Distribution growth was driven by a strong performance across the Hyprop portfolio.
-      
-  </div>
+    <div class="item item-avatar">
+      <h2>Hyprop continues sustainable distribution growth</h2>
+      <p>23 FEB 2015</p>
+    </div>
 
-  <div class="item tabs tabs-secondary tabs-icon-left">
-    <a class="tab-item" href="#">
-      <i class="icon ion-document"></i>
-      View
-    </a>
-    <a class="tab-item" href="#">
-      <i class="icon ion-chatbox"></i>
-      Comment
-    </a>
-    <a class="tab-item" href="#">
-      <i class="icon ion-share"></i>
-      Share
-    </a>
-  </div>
+    <div class="item item-body">
+      <p>
+        Reporting healthy growth in returns, Hyprop Investments Limited ("Hyprop") (JSE: HYP) today announced an interim dividend of 262.7 cents per share for the six months to December 2014, up 13.7% on December 2013. Distribution growth was driven by a strong performance across the Hyprop portfolio.
+        
+      </div>
 
-</div>
+      <div class="item tabs tabs-secondary tabs-icon-left">
+        <a class="tab-item" href="#">
+          <i class="icon ion-document"></i>
+          View
+        </a>
+        <a class="tab-item" href="#">
+          <i class="icon ion-chatbox"></i>
+          Comment
+        </a>
+        <a class="tab-item" href="#">
+          <i class="icon ion-share"></i>
+          Share
+        </a>
+      </div>
 
-<div class="list card">
+    </div>
 
-  <div class="item item-avatar">
-    <h2>Hyprop continues sustainable distribution growth</h2>
-    <p>23 FEB 2015</p>
-  </div>
+    <div class="list card">
 
-  <div class="item item-body">
-    <p>
-      Reporting healthy growth in returns, Hyprop Investments Limited ("Hyprop") (JSE: HYP) today announced an interim dividend of 262.7 cents per share for the six months to December 2014, up 13.7% on December 2013. Distribution growth was driven by a strong performance across the Hyprop portfolio.
-      
-  </div>
+      <div class="item item-avatar">
+        <h2>Hyprop continues sustainable distribution growth</h2>
+        <p>23 FEB 2015</p>
+      </div>
 
-  <div class="item tabs tabs-secondary tabs-icon-left">
-    <a class="tab-item" href="#">
-      <i class="icon ion-document"></i>
-      View
-    </a>
-    <a class="tab-item" href="#">
-      <i class="icon ion-chatbox"></i>
-      Comment
-    </a>
-    <a class="tab-item" href="#">
-      <i class="icon ion-share"></i>
-      Share
-    </a>
-  </div>
+      <div class="item item-body">
+        <p>
+          Reporting healthy growth in returns, Hyprop Investments Limited ("Hyprop") (JSE: HYP) today announced an interim dividend of 262.7 cents per share for the six months to December 2014, up 13.7% on December 2013. Distribution growth was driven by a strong performance across the Hyprop portfolio.
+          
+        </div>
 
-</div>
-  </ion-content>
-</ion-view>
+        <div class="item tabs tabs-secondary tabs-icon-left">
+          <a class="tab-item" href="#">
+            <i class="icon ion-document"></i>
+            View
+          </a>
+          <a class="tab-item" href="#">
+            <i class="icon ion-chatbox"></i>
+            Comment
+          </a>
+          <a class="tab-item" href="#">
+            <i class="icon ion-share"></i>
+            Share
+          </a>
+        </div>
+
+      </div> -->
+    </ion-content>
+  </ion-view>

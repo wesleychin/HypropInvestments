@@ -46,7 +46,8 @@ angular.module('starter.controllers', [])
 
 .controller('PressReleasesCtrl', function($scope, $http) {
   $http.get('/api/pressreleases.json').success(function(response) {
-    $scope.pressreleases = response;
+    var data = response;
+    $scope.pressreleases = data.rss.channel[0].item;
   });
 })
 
