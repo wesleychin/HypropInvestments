@@ -116,7 +116,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'highcharts-ng', 'uiG
     url: "/pressreleases",
     views: {
       'menuContent': {
-        templateUrl: "templates/pressreleases.html"
+        templateUrl: "templates/pressreleases.html",
+        controller: 'PressReleasesCtrl'
       }
     }
   })
