@@ -69,7 +69,7 @@ a.item {
   background-color: #2c77a4;
   color: #fff;
   border-bottom:1px solid #fff;
-} 
+}
 
 .item-icon-left .icon, .item-icon-right .icon {
   display: -webkit-flex;
@@ -119,13 +119,13 @@ a, button, :focus, a:focus, button:focus, a:active, a:hover {
 	background-image:url(../images/hyprop.png);
 	background-position:bottom;
 	}
-	
+
 .home-logo {
 	border:2px solid #fff;
 	margin-bottom:20px;
 	margin-top:20px;
 	}
-	
+
 .homeoverlay {background: rgba(0, 0, 0, 0.4);
 padding:12px;
 display: inline-block;
@@ -254,7 +254,7 @@ a, button, :focus, a:focus, button:focus, a:active, a:hover {
 
 .itemcard {
   color: #FFF;
-  background-color:#FFF !important; 
+  background-color:#FFF !important;
   border-bottom:1px solid #f8f8f8 !important;
   position: relative;
   z-index: 2;
@@ -267,14 +267,14 @@ a, button, :focus, a:focus, button:focus, a:active, a:hover {
 .black {
   background-color: #000;
   padding: 0;
-  margin: 0;	
+  margin: 0;
   border: 5px solid #FFF;
 	}
-	
-.scroll-content { 
+
+.scroll-content {
 background-color: #dddcdd !important;
 }
-	
+
 .block1 {
   border: 5px solid #FFF;
   overflow:hidden;
@@ -301,14 +301,19 @@ background-color: #dddcdd !important;
   height:150px;
   background-image:url(../images/block3.png);
 }
-  
+
 .seperator {
   border-bottom: 1px solid #EBEBEB;
   margin-bottom: 10px;
   margin-top: 20px;
 }
 
+.dates {
+  color: ##2b76a2;
+font-weight: 900;
+}
+
 .item-content.activated {
 	background-color:#000 !important; color:#FFF;}
-	
+
 .item-content.hover {background-color:red; color:#FFF;}
