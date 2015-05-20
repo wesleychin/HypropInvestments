@@ -278,11 +278,13 @@ background-color: #dddcdd !important;
 .block1 {
   border: 5px solid #FFF;
   overflow:hidden;
-  height:150px;
+  height:138px;
+  background-size: 100%;
+  background-position: 50% 50%;
   background-image:url(../images/block1.png);
 }
 
-.block {background: rgba(0, 0, 0, 0.6); color:#FFF; font-size:13px; margin:0; padding:5px 10px 5px 10px;}
+.block {background: rgba(0, 0, 0, 0.6); color:#FFF; font-size: 11px; margin:0; padding:5px 10px 5px 10px; font-weight:900;}
 
 .border {border:1px solid #BBBBBB;}
 
@@ -291,14 +293,18 @@ background-color: #dddcdd !important;
 .block2 {
   border: 5px solid #FFF;
   overflow:hidden;
-  height:150px;
+  height:138px;
+  background-size: 100%;
+  background-position: 50% 50%;
   background-image:url(../images/block2.png);
 }
 
 .block3 {
   border: 5px solid #FFF;
   overflow:hidden;
-  height:150px;
+  height:138px;
+  background-size: 100%;
+  background-position: 50% 50%;
   background-image:url(../images/block3.png);
 }
 
