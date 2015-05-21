@@ -1,4 +1,8 @@
 /* Empty. Add your own CSS if you like */
+ui-gmap-google-map {
+    width: 450px;
+    height: 450px;
+}
 
 h1, .h1 {
   font-size: 14px !important;

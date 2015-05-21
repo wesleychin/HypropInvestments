@@ -162,7 +162,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'highcharts-ng', 'uiG
     url: "/investorcontacts",
     views: {
       'menuContent': {
-        templateUrl: "templates/investorcontacts.html"
+        templateUrl: "templates/investorcontacts.html",
+        controller: 'InvestorContactsCtrl'
       }
     }
   })

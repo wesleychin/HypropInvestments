@@ -51,16 +51,7 @@ angular.module('starter.controllers', [])
   });
 })
 
-.controller('ShareInformationCtrl', function($scope, uiGmapIsReady, $timeout, $firebaseArray, $firebaseObject) {
-  var firebaseRootRef = new Firebase('https://boiling-heat-2151.firebaseio.com/');
-  var firebaseChildRef = firebaseRootRef.child("shareinformation/datafeed");
-
-  firebaseChildRef.limitToLast(1).on("value", function(snapshot) {
-    console.log(JSON.stringify(snapshot.val()));
-  }, function (errorObject) {
-    console.log("The read failed: " + errorObject.code);
-  });
-
+.controller('InvestorContactsCtrl', function($scope, uiGmapIsReady, $timeout, $http) {
   $scope.markers = [];
   $scope.map = {
     center: { latitude: -26.145311, longitude: 28.042061 },
@@ -83,7 +74,17 @@ angular.module('starter.controllers', [])
       });
     }, 0);
   });
+})
 
+.controller('ShareInformationCtrl', function($scope, uiGmapIsReady, $timeout, $firebaseArray, $firebaseObject) {
+  var firebaseRootRef = new Firebase('https://boiling-heat-2151.firebaseio.com/');
+  var firebaseChildRef = firebaseRootRef.child("shareinformation/datafeed");
+
+  firebaseChildRef.limitToLast(1).on("value", function(snapshot) {
+    console.log(JSON.stringify(snapshot.val()));
+  }, function (errorObject) {
+    console.log("The read failed: " + errorObject.code);
+  });
 
   $scope.config = {
 
