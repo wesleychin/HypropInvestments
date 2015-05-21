@@ -1,4 +1,5 @@
-angular.module('starter').filter('listfilter',[ function () {
+angular.module('starter')
+.filter('listfilter',[ function () {
     return function(items, searchText) {
         var filtered = [];            
 
