@@ -42,8 +42,8 @@ h1, .h1 {
 }
 
 .item {
-  border-color: #2b76a2;
-  background-color:#105e8b;
+  /* border-color: #2b76a2; */
+  /* background-color:#105e8b; */
   color: #FFF;
   position: relative;
   z-index: 2;
@@ -54,6 +54,7 @@ h1, .h1 {
   border-style: solid;
   font-size: 16px;
 }
+
 
 .item-icon-left {
   padding-left: 54px;
@@ -142,7 +143,7 @@ padding:12px;
 display: inline-block;
 width:100%;
 font-size:16px;
-border:1px solid #FFF;
+border:1px solid #333;
 }
 
 .item-complex .item-content, .item-radio .item-content {
@@ -175,9 +176,15 @@ a, button, :focus, a:focus, button:focus, a:active, a:hover {
 }
 
 .item p {
-  color: #999;
-  font-size: 12px;
+  color: #2B76A2;
+  /* font-size: 12px; */
   margin-bottom: 2px;
+}
+
+.item-complex.item-icon-left {
+  padding-left: 0;
+  background-color: #105e8b;
+  border: 1px solid #3C7596;
 }
 
 .tabs {
@@ -212,8 +219,8 @@ a, button, :focus, a:focus, button:focus, a:active, a:hover {
   padding-top: 0;
   background-position: bottom;
   border-top-width: 0;
-  background-color:#3a3a3a;
-  /* border-bottom-width: 1px; */
+  background-color:#d5e4ec;
+  border-bottom: 1px solid #aac8da;
 }
 
 .tabs-striped.tabs-background-positive .tabs {
@@ -221,6 +228,14 @@ a, button, :focus, a:focus, button:focus, a:active, a:hover {
   background-image: none;
   border-bottom:0;
 }
+
+.tabs-top.tabs-striped .tab-item.tab-item-active, .tabs-top.tabs-striped .tab-item.active, .tabs-top.tabs-striped .tab-item.activated {
+  margin-top: 0;
+  border-width: 0px 0px 3px 0px !important;
+  border-style: solid;
+  border-bottom: 3px solid #B7D0DE;
+}
+
 
 .item h2 {
   margin: 0 0 2px 0;
@@ -255,7 +270,11 @@ a, button, :focus, a:focus, button:focus, a:active, a:hover {
   font-weight:900;
 }
 
-.content {padding:20px;}
+.content {
+  padding:20px;
+  background-color:#FFF
+
+}
 
 .date {
   padding-right: 14px;
@@ -283,7 +302,7 @@ a, button, :focus, a:focus, button:focus, a:active, a:hover {
 	}
 
 .scroll-content {
-background-color: #dddcdd !important;
+background-color: #f6f7f7 !important;
 }
 
 .block1 {
