@@ -118,23 +118,26 @@ a, button, :focus, a:focus, button:focus, a:active, a:hover {
 	overflow: hidden;
 	height:700px;
 	background-image:url(../images/bkr.png);
-  background-size: 100%;}
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
 
 .home-logo {
-  border:1px solid #fff;
+  border:5px solid #fff;
   }
 
   .shareprice {
     font-size: 15px; color:white;
     font-weight:900;
-    margin-bottom: 10px;
-    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);}
+    margin-bottom: 10px;}
+    /*text-shadow: 6px 6px 0px rgba(0,0,0,0.2);}*/
 
 
 .sharepricetext {
   font-size: 25px; color:#FFF;
-  font-weight:900;
-  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);}
+  font-weight:900;}
+  /*text-shadow: 6px 6px 0px rgba(0,0,0,0.2);}*/
 
 .smalltext {font-size: 13px; color:#FFF;}
 
@@ -143,7 +146,7 @@ padding:12px;
 display: inline-block;
 width:100%;
 font-size:16px;
-border:1px solid #333;
+border:1px solid #fff;
 }
 
 .item-complex .item-content, .item-radio .item-content {
