@@ -34,14 +34,31 @@ angular.module('starter.controllers', [])
 })
 
 .controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
-  { title: 'Reggae', id: 1 },
-  { title: 'Chill', id: 2 },
-  { title: 'Dubstep', id: 3 },
-  { title: 'Indie', id: 4 },
-  { title: 'Rap', id: 5 },
-  { title: 'Cowbell', id: 6 }
-  ];
+  $scope.groups = [];
+  for (var i=0; i<10; i++) {
+    $scope.groups[i] = {
+      name: i,
+      items: []
+    };
+    for (var j=0; j<3; j++) {
+      $scope.groups[i].items.push(i + '-' + j);
+    }
+  }
+  
+  /*
+   * if given group is the selected group, deselect it
+   * else, select the given group
+   */
+   $scope.toggleGroup = function(group) {
+    if ($scope.isGroupShown(group)) {
+      $scope.shownGroup = null;
+    } else {
+      $scope.shownGroup = group;
+    }
+  };
+  $scope.isGroupShown = function(group) {
+    return $scope.shownGroup === group;
+  };
 })
 
 .controller('PressReleasesCtrl', function($scope, $http) {
@@ -87,37 +104,37 @@ angular.module('starter.controllers', [])
   });
 
   $scope.config = {
-title: {
-            text: 'Share Price',
+    title: {
+      text: 'Share Price',
             x: -20 //center
-        },
-        xAxis: {
+          },
+          xAxis: {
             categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-                'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-        },
-        yAxis: {
+            'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+          },
+          yAxis: {
             title: {
-                text: 'Temperature (°C)'
+              text: 'Temperature (°C)'
             },
             plotLines: [{
-                value: 0,
-                width: 1,
-                color: '#808080'
+              value: 0,
+              width: 1,
+              color: '#808080'
             }]
-        },
-        tooltip: {
+          },
+          tooltip: {
             valueSuffix: '°C'
-        },
-        legend: {
+          },
+          legend: {
             layout: 'vertical',
             align: 'right',
             verticalAlign: 'middle',
             borderWidth: 0
-        },
-        series: [{
+          },
+          series: [{
             name: 'London',
             data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
-        }]
+          }]
         };
       })
 

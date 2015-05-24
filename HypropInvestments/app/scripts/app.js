@@ -153,7 +153,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'highcharts-ng', 'uiG
     url: "/shareholderstructure",
     views: {
       'menuContent': {
-        templateUrl: "templates/shareholderstructure.html"
+        templateUrl: "templates/shareholderstructure.html", 
+        controller: 'PlaylistsCtrl'
       }
     }
   })
