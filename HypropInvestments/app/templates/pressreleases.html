@@ -11,33 +11,52 @@
 </ion-tab> -->
 <ion-tab title="2014">
 <ion-nav-view>
-<div ng-repeat="pressrelease in pressreleases | listfilter:2014">
-<a ng-href={{pressrelease.link.toString()}}>{{pressrelease.title.toString()}}</a><br/>
-  <span>{{pressrelease.pubDate.toString()}}</span><br/><br/>
+<div ng-repeat="pressrelease in pressreleases | listfilter:2014" style="border: 2px solid #a1a1a1;
+    padding: 10px; 
+    margin: 10px 5px 10px 5px;
+    background: #dddddd;
+    border-radius: 5px;">
+<div ng-click="showDetails = ! showDetails">
+  <span>{{pressrelease.title.toString()}}</span><br/>
+  <span>{{pressrelease.pubDate.toString()}}</span>
+</div>
+<div class="procedure-details" ng-show="showDetails">
+<span>{{pressrelease.description.toString()}}</span>
+</div>
 </div>
 </ion-nav-view>
 </ion-tab>
 <ion-tab title="2013">
 <ion-nav-view>
-<div ng-repeat="pressrelease in pressreleases | listfilter:2013">
-  <a ng-href={{pressrelease.link.toString()}}>{{pressrelease.title.toString()}}</a><br/>
-  <span>{{pressrelease.pubDate.toString()}}</span><br/><br/>
+<div ng-repeat="pressrelease in pressreleases | listfilter:2013" style="border: 2px solid #a1a1a1;
+    padding: 10px; 
+    margin: 10px 5px 10px 5px;
+    background: #dddddd;
+    border-radius: 5px;">
+<div ng-click="showDetails = ! showDetails">
+  <span>{{pressrelease.title.toString()}}</span><br/>
+  <span>{{pressrelease.pubDate.toString()}}</span>
+</div>
+<div class="procedure-details" ng-show="showDetails">
+<span>{{pressrelease.description.toString()}}</span>
+</div>
 </div>
 </ion-nav-view>
 </ion-tab>
 <ion-tab title="2012">
 <ion-nav-view>
-<div ng-repeat="pressrelease in pressreleases | listfilter:2012">
-  <a ng-href={{pressrelease.link.toString()}}>{{pressrelease.title.toString()}}</a><br/>
-  <span>{{pressrelease.pubDate.toString()}}</span><br/><br/>
+<div ng-repeat="pressrelease in pressreleases | listfilter:2012" style="border: 2px solid #a1a1a1;
+    padding: 10px; 
+    margin: 10px 5px 10px 5px;
+    background: #dddddd;
+    border-radius: 5px;">
+<div ng-click="showDetails = ! showDetails">
+  <span>{{pressrelease.title.toString()}}</span><br/>
+  <span>{{pressrelease.pubDate.toString()}}</span>
 </div>
-</ion-nav-view>
-</ion-tab>
-<ion-tab title="2011">
-<ion-nav-view>
-<div ng-repeat="pressrelease in pressreleases | listfilter:2011">
-  <a ng-href={{pressrelease.link.toString()}}>{{pressrelease.title.toString()}}</a><br/>
-  <span>{{pressrelease.pubDate.toString()}}</span><br/><br/>
+<div class="procedure-details" ng-show="showDetails">
+<span>{{pressrelease.description.toString()}}</span>
+</div>
 </div>
 </ion-nav-view>
 </ion-tab>
@@ -51,79 +70,27 @@
 </ion-tab> -->
 </ion-tabs>
 
-
-<!-- <div ng-repeat="pressrelease in pressreleases">
-  <span>{{pressrelease.title}}</span><br/>
-  <span>{{pressrelease.link}}</span><br/>
-  <span>{{pressrelease.pubDate}}</span><br/><br/>
-</div -->
-
-  <!-- <div class="list card">
-
-    <div class="item item-avatar">
-      <h2>Hyprop continues sustainable distribution growth</h2>
-      <p>23 FEB 2015</p>
-    </div>
-
-    <div class="item item-body">
-      <p>
-        Reporting healthy growth in returns, Hyprop Investments Limited ("Hyprop") (JSE: HYP) today announced an interim dividend of 262.7 cents per share for the six months to December 2014, up 13.7% on December 2013. Distribution growth was driven by a strong performance across the Hyprop portfolio.
-        
-      </div>
-
-      <div class="item tabs tabs-secondary tabs-icon-left">
-        <a class="tab-item" href="#">
-          <i class="icon ion-document"></i>
-          View
-        </a>
-        <a class="tab-item" href="#">
-          <i class="icon ion-chatbox"></i>
-          Comment
-        </a>
-        <a class="tab-item" href="#">
-          <i class="icon ion-share"></i>
-          Share
-        </a>
-      </div>
-
-    </div>
-
-    <div class="list card">
-
-      <div class="item item-avatar">
-        <h2>Hyprop continues sustainable distribution growth</h2>
-        <p>23 FEB 2015</p>
-      </div>
-
-      <div class="item item-body">
-        <p>
-          Reporting healthy growth in returns, Hyprop Investments Limited ("Hyprop") (JSE: HYP) today announced an interim dividend of 262.7 cents per share for the six months to December 2014, up 13.7% on December 2013. Distribution growth was driven by a strong performance across the Hyprop portfolio.
-          
-        </div>
-
-        <div class="item tabs tabs-secondary tabs-icon-left">
-          <a class="tab-item" href="#">
-            <i class="icon ion-document"></i>
-            View
-          </a>
-          <a class="tab-item" href="#">
-            <i class="icon ion-chatbox"></i>
-            Comment
-          </a>
-          <a class="tab-item" href="#">
-            <i class="icon ion-share"></i>
-            Share
-          </a>
-        </div>
-
-      </div> -->
-    </ion-content>
-  </ion-view>
-
-  
-
-
-  
-  
+<!-- <ul class="list">
+    <li class="item">
+        <p>23 February 2015</p>
+        <h3>Hyprop continues sustainable distribution growth</h3>
+    </li>
+    <li class="item">
+        <p>02 December 2014</p>
+        <h3>Hyprop debuts on the jse's sri index</h3>
+    </li>
+    <li class="item">
+        <p>10 November 2014</p>
+        <h3>Clearwater mall goes green with solar energy</h3>
+    </li>
+    <li class="item">
+        <p>02 December 2014</p>
+        <h3>Posting of notice of annual general meeting</h3>
+    </li>
+    <li class="item item-text-wrap">
+        <p>02 December 2014</p>
+        <h3>Hyprop concludes rosebank mall redevelopment with woolies opening</h3>
+    </li>
+</ul> -->
 </ion-content>
 </ion-view>
