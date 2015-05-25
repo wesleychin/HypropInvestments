@@ -11,12 +11,14 @@
 </ion-tab> -->
 <ion-tab title="2014">
 <ion-nav-view>
-<div ng-repeat="pressrelease in pressreleases | listfilter:2014" style="border: 2px solid #a1a1a1;
-    padding: 10px; 
-    margin: 10px 5px 10px 5px;
-    background: #dddddd;
-    border-radius: 5px;">
-<div ng-click="showDetails = ! showDetails">
+<div ng-repeat="pressrelease in pressreleases | listfilter:2014"
+
+    style="border: 1px solid #a1a1a1;
+  padding: 26px;
+  margin: 10px 10px 10px 10px;
+  background: #F6F6F6;
+  border-radius: 7px;">
+<div ng-click="showDetails = ! showDetails" style="font-size:17px; color:#2b76a2; text-transform: uppercase;">
   <span>{{pressrelease.title.toString()}}</span><br/>
   <span>{{pressrelease.pubDate.toString()}}</span>
 </div>
@@ -28,11 +30,11 @@
 </ion-tab>
 <ion-tab title="2013">
 <ion-nav-view>
-<div ng-repeat="pressrelease in pressreleases | listfilter:2013" style="border: 2px solid #a1a1a1;
-    padding: 10px; 
-    margin: 10px 5px 10px 5px;
-    background: #dddddd;
-    border-radius: 5px;">
+<div ng-repeat="pressrelease in pressreleases | listfilter:2013"   style="border: 1px solid #a1a1a1;
+padding: 26px;
+margin: 10px 10px 10px 10px;
+background: #F6F6F6;
+border-radius: 7px;">
 <div ng-click="showDetails = ! showDetails">
   <span>{{pressrelease.title.toString()}}</span><br/>
   <span>{{pressrelease.pubDate.toString()}}</span>
@@ -46,7 +48,7 @@
 <ion-tab title="2012">
 <ion-nav-view>
 <div ng-repeat="pressrelease in pressreleases | listfilter:2012" style="border: 2px solid #a1a1a1;
-    padding: 10px; 
+    padding: 10px;
     margin: 10px 5px 10px 5px;
     background: #dddddd;
     border-radius: 5px;">
