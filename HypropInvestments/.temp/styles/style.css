@@ -128,7 +128,7 @@ a, button, :focus, a:focus, button:focus, a:active, a:hover {
 }
 
 .home-logo {
-  border:5px solid #fff;
+  border:3px solid #fff;
   }
 
   .shareprice {
@@ -148,9 +148,9 @@ a, button, :focus, a:focus, button:focus, a:active, a:hover {
 .homeoverlay {background: rgba(0, 0, 0, 0.4);
 padding:12px;
 display: inline-block;
-width:100%;
 font-size:16px;
-border:1px solid #fff;
+border:0px solid #fff;
+margin-top: 160px;
 }
 
 .item-complex .item-content, .item-radio .item-content {
@@ -272,10 +272,10 @@ a, button, :focus, a:focus, button:focus, a:active, a:hover {
   padding: 20px;
 }
 
-.sharepricefeed {  color: green;
+.sharepricefeed {
+  color: rgb(43, 118, 162);
   font-size: 25px;
-  font-weight:900;
-}
+  font-weight: 900;}
 
 .content {
   padding:20px;
@@ -357,6 +357,6 @@ font-weight: 900;
 }
 
 .item-content.activated {
-	background-color:#000 !important; color:#FFF;}
+	background-color:#105e8b !important; color:#FFF;}
 
 .item-content.hover {background-color:red; color:#FFF;}
