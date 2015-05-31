@@ -1,27 +1,80 @@
 <ion-view view-title="Share Information">
-  <ion-content>
-    <div class="list card">
-      <br>
-    <div class="sharepricefeed" align="center">12250 ZAR cents</div>
-    </p>
-    <p align="center">Change: 0.00
-    (15 minute delayed feed)</p>
-
-    <br><br>
-     <div align="center">
-     Zoom<br><br>
-     <button class="button button-small">
-      1D
-    </button>
-    <button class="button button-small">
-      2H
-    </button>
-    <button class="button button-small">
-      1H
-    </button>
-    </div>
-    <highchart id="chart1" config="config"></highchart>
-    <br/>
-      </div>
-  </ion-content>
+<ion-content>
+    <span>JSE Limited</span><br/>
+    <span>JSE: JSE - 29 May 5:00 PM SAST</span><br/>
+    <span class="sharepricefeed" align="center">13 250,00  (0.00%)</span>
+    <br/><br/>
+<ion-tabs>
+<ion-tab title="1 day">
+<ion-nav-view>
+<div><highchart id="chart1" config="config1d"></highchart></div>
+<div>
+<span>Open: 13 200,00</span><br/>
+<span>High: 13 200,00</span><br/>
+<span>Low: 13 003,00</span>
+</div>
+</ion-nav-view>
+</ion-tab>
+<ion-tab title="5 day">
+<ion-nav-view>
+<div><highchart id="chart2" config="config5d"></highchart></div>
+<div>
+<span>Open: 13 200,00</span><br/>
+<span>High: 13 200,00</span><br/>
+<span>Low: 13 003,00</span>
+</div>
+</ion-nav-view>
+</ion-tab>
+<ion-tab title="1 month">
+<ion-nav-view>
+<div><highchart id="chart3" config="config1m"></highchart></div>
+<div>
+<span>Open: 13 200,00</span><br/>
+<span>High: 13 200,00</span><br/>
+<span>Low: 13 003,00</span>
+</div>
+</ion-nav-view>
+</ion-tab>
+<ion-tab title="3 months">
+<ion-nav-view>
+<div><highchart id="chart4" config="config3m"></highchart></div>
+<div>
+<span>Open: 13 200,00</span><br/>
+<span>High: 13 200,00</span><br/>
+<span>Low: 13 003,00</span>
+</div>
+</ion-nav-view>
+</ion-tab>
+<ion-tab title="5 months">
+<ion-nav-view>
+<div><highchart id="chart5" config="config5m"></highchart></div>
+<div>
+<span>Open: 13 200,00</span><br/>
+<span>High: 13 200,00</span><br/>
+<span>Low: 13 003,00</span>
+</div>
+</ion-nav-view>
+</ion-tab>
+<ion-tab title="1 year">
+<ion-nav-view>
+<div><highchart id="chart6" config="config1y"></highchart></div>
+<div>
+<span>Open: 13 200,00</span><br/>
+<span>High: 13 200,00</span><br/>
+<span>Low: 13 003,00</span>
+</div>
+</ion-nav-view>
+</ion-tab>
+<ion-tab title="5 years">
+<ion-nav-view>
+<div><highchart id="chart7" config="config5y"></highchart></div>
+<div>
+<span>Open: 13 200,00</span><br/>
+<span>High: 13 200,00</span><br/>
+<span>Low: 13 003,00</span>
+</div>
+</ion-nav-view>
+</ion-tab>
+</ion-tabs>
+</ion-content>
 </ion-view>

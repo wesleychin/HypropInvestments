@@ -34,7 +34,7 @@ angular.module('starter.controllers', [])
 })
 
 .controller('ShareholderStructureCtrl', function($scope) {
-  
+
 })
 
 .controller('PressReleasesCtrl', function($scope, $http) {
@@ -70,27 +70,26 @@ angular.module('starter.controllers', [])
 })
 
 .controller('ShareInformationCtrl', function($scope, uiGmapIsReady, $timeout, $firebaseArray, $firebaseObject) {
-  var firebaseRootRef = new Firebase('https://boiling-heat-2151.firebaseio.com/');
-  var firebaseChildRef = firebaseRootRef.child("shareinformation/datafeed");
+  // var firebaseRootRef = new Firebase('https://boiling-heat-2151.firebaseio.com/');
+  // var firebaseChildRef = firebaseRootRef.child("shareinformation/datafeed");
 
-  firebaseChildRef.limitToLast(1).on("value", function(snapshot) {
-    console.log(JSON.stringify(snapshot.val()));
-  }, function (errorObject) {
-    console.log("The read failed: " + errorObject.code);
-  });
+  // firebaseChildRef.limitToLast(1).on("value", function(snapshot) {
+  //   console.log(JSON.stringify(snapshot.val()));
+  // }, function (errorObject) {
+  //   console.log("The read failed: " + errorObject.code);
+  // });
 
-  $scope.config = {
-    title: {
-      text: 'Share Price',
+$scope.config1d = {
+  title: {
+    text: '',
             x: -20 //center
           },
           xAxis: {
-            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-            'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+            categories: ['09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00']
           },
           yAxis: {
             title: {
-              text: 'Temperature (°C)'
+              text: ''
             },
             plotLines: [{
               value: 0,
@@ -99,7 +98,7 @@ angular.module('starter.controllers', [])
             }]
           },
           tooltip: {
-            valueSuffix: '°C'
+            valueSuffix: ''
           },
           legend: {
             layout: 'vertical',
@@ -108,8 +107,206 @@ angular.module('starter.controllers', [])
             borderWidth: 0
           },
           series: [{
-            name: 'London',
-            data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+            name: '',
+            data: [13200, 13071, 13077, 13056, 13085, 13088, 13069, 13149]
+          }]
+        };
+
+        $scope.config5d = {
+  title: {
+    text: '',
+            x: -20 //center
+          },
+          xAxis: {
+            categories: ['09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00']
+          },
+          yAxis: {
+            title: {
+              text: ''
+            },
+            plotLines: [{
+              value: 0,
+              width: 1,
+              color: '#808080'
+            }]
+          },
+          tooltip: {
+            valueSuffix: ''
+          },
+          legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+          },
+          series: [{
+            name: '',
+            data: [13200, 13071, 13077, 13056, 13085, 13088, 13069, 13149]
+          }]
+        };
+
+        $scope.config1m = {
+  title: {
+    text: '',
+            x: -20 //center
+          },
+          xAxis: {
+            categories: ['09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00']
+          },
+          yAxis: {
+            title: {
+              text: ''
+            },
+            plotLines: [{
+              value: 0,
+              width: 1,
+              color: '#808080'
+            }]
+          },
+          tooltip: {
+            valueSuffix: ''
+          },
+          legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+          },
+          series: [{
+            name: '',
+            data: [13200, 13071, 13077, 13056, 13085, 13088, 13069, 13149]
+          }]
+        };
+
+        $scope.config3m = {
+  title: {
+    text: '',
+            x: -20 //center
+          },
+          xAxis: {
+            categories: ['09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00']
+          },
+          yAxis: {
+            title: {
+              text: ''
+            },
+            plotLines: [{
+              value: 0,
+              width: 1,
+              color: '#808080'
+            }]
+          },
+          tooltip: {
+            valueSuffix: ''
+          },
+          legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+          },
+          series: [{
+            name: '',
+            data: [13200, 13071, 13077, 13056, 13085, 13088, 13069, 13149]
+          }]
+        };
+
+        $scope.config5m = {
+  title: {
+    text: '',
+            x: -20 //center
+          },
+          xAxis: {
+            categories: ['09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00']
+          },
+          yAxis: {
+            title: {
+              text: ''
+            },
+            plotLines: [{
+              value: 0,
+              width: 1,
+              color: '#808080'
+            }]
+          },
+          tooltip: {
+            valueSuffix: ''
+          },
+          legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+          },
+          series: [{
+            name: '',
+            data: [13200, 13071, 13077, 13056, 13085, 13088, 13069, 13149]
+          }]
+        };
+
+        $scope.config1y = {
+  title: {
+    text: '',
+            x: -20 //center
+          },
+          xAxis: {
+            categories: ['09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00']
+          },
+          yAxis: {
+            title: {
+              text: ''
+            },
+            plotLines: [{
+              value: 0,
+              width: 1,
+              color: '#808080'
+            }]
+          },
+          tooltip: {
+            valueSuffix: ''
+          },
+          legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+          },
+          series: [{
+            name: '',
+            data: [13200, 13071, 13077, 13056, 13085, 13088, 13069, 13149]
+          }]
+        };
+
+        $scope.config5y = {
+  title: {
+    text: '',
+            x: -20 //center
+          },
+          xAxis: {
+            categories: ['09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00']
+          },
+          yAxis: {
+            title: {
+              text: ''
+            },
+            plotLines: [{
+              value: 0,
+              width: 1,
+              color: '#808080'
+            }]
+          },
+          tooltip: {
+            valueSuffix: ''
+          },
+          legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0
+          },
+          series: [{
+            name: '',
+            data: [13200, 13071, 13077, 13056, 13085, 13088, 13069, 13149]
           }]
         };
       })
