@@ -1,11 +1,12 @@
 <ion-view view-title="Share Information">
 <ion-content>
-    <span>JSE Limited</span><br/>
-    <span>JSE: JSE - 29 May 5:00 PM SAST</span><br/>
-    <span class="sharepricefeed" align="center">13 250,00  (0.00%)</span>
-    <br/><br/>
+<div class="content">
+    <p class="sharepricefeed" align="center">13 250,00  (0.00%)</p>
+    <p align="center">change: 0:00 (15minute delayed feed)</p>
+
+</div>
 <ion-tabs>
-<ion-tab title="1 day">
+<ion-tab title="1D">
 <ion-nav-view>
 <div><highchart id="chart1" config="config1d"></highchart></div>
 <div>
@@ -15,7 +16,7 @@
 </div>
 </ion-nav-view>
 </ion-tab>
-<ion-tab title="5 day">
+<ion-tab title="5D">
 <ion-nav-view>
 <div><highchart id="chart2" config="config5d"></highchart></div>
 <div>
@@ -25,7 +26,7 @@
 </div>
 </ion-nav-view>
 </ion-tab>
-<ion-tab title="1 month">
+<ion-tab title="1M">
 <ion-nav-view>
 <div><highchart id="chart3" config="config1m"></highchart></div>
 <div>
@@ -35,7 +36,7 @@
 </div>
 </ion-nav-view>
 </ion-tab>
-<ion-tab title="3 months">
+<ion-tab title="3M">
 <ion-nav-view>
 <div><highchart id="chart4" config="config3m"></highchart></div>
 <div>
@@ -45,7 +46,7 @@
 </div>
 </ion-nav-view>
 </ion-tab>
-<ion-tab title="5 months">
+<ion-tab title="5M">
 <ion-nav-view>
 <div><highchart id="chart5" config="config5m"></highchart></div>
 <div>
@@ -55,7 +56,7 @@
 </div>
 </ion-nav-view>
 </ion-tab>
-<ion-tab title="1 year">
+<ion-tab title="1Y">
 <ion-nav-view>
 <div><highchart id="chart6" config="config1y"></highchart></div>
 <div>
@@ -65,10 +66,10 @@
 </div>
 </ion-nav-view>
 </ion-tab>
-<ion-tab title="5 years">
+<ion-tab title="5Y">
 <ion-nav-view>
 <div><highchart id="chart7" config="config5y"></highchart></div>
-<div>
+<div class="content">
 <span>Open: 13 200,00</span><br/>
 <span>High: 13 200,00</span><br/>
 <span>Low: 13 003,00</span>

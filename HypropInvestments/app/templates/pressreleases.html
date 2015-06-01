@@ -13,12 +13,12 @@
 <ion-nav-view>
 <div ng-repeat="pressrelease in pressreleases | listfilter:2014"
 
-    style="border: 1px solid #a1a1a1;
-  padding: 26px;
+    style="border: 1px solid #95bad0;
+  padding: 15px;
   margin: 10px 10px 10px 10px;
   background: #F6F6F6;
-  border-radius: 7px;">
-<div ng-click="showDetails = ! showDetails" style="font-size:17px; color:#2b76a2; text-transform: uppercase;">
+  border-radius: 3px;">
+<div ng-click="showDetails = ! showDetails" style="font-size:13px; color:#2b76a2; text-transform: uppercase; font-weight:900">
   <span>{{pressrelease.title.toString()}}</span><br/>
   <span>{{pressrelease.pubDate.toString()}}</span>
 </div>
